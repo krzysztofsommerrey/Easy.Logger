@@ -1,4 +1,6 @@
-﻿namespace Easy.Logger.Tests.Unit
+﻿using Legimi.Easy.Logger;
+
+namespace Easy.Logger.Tests.Unit
 {
     using System;
     using System.Collections.Generic;

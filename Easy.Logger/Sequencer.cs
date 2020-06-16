@@ -1,10 +1,10 @@
-﻿namespace Easy.Logger
-{
-    using System;
-    using System.Collections.Concurrent;
-    using System.Threading;
-    using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Concurrent;
+using System.Threading;
+using System.Threading.Tasks;
 
+namespace Legimi.Easy.Logger
+{
     /// <summary>
     /// A single worker implementation of the <c>Producer-Consumer</c> pattern.
     /// </summary>

@@ -1,8 +1,10 @@
-﻿namespace Easy.Logger.Tests.Unit
+﻿using Easy.Logger.Interfaces;
+using Legimi.Easy.Logger;
+
+namespace Easy.Logger.Tests.Unit
 {
     using System;
     using System.Globalization;
-    using Easy.Logger.Interfaces;
     using log4net;
     using log4net.Core;
     using Moq;

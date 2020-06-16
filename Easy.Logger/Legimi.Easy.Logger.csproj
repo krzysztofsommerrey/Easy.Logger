@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <PackageId>Easy.Logger</PackageId>
+    <PackageId>Legimi.Easy.Logger</PackageId>
     <Description>A modern high performance cross platform wrapper around Log4Net.</Description>
-    <Authors>Nima Ara</Authors>
+    <Authors>Nima Ara, Legimi S.A.</Authors>
     <Copyright>2020 Nima Ara</Copyright>
     <PackageTags>log4net;Logging;Easy;Logger;Log</PackageTags>
     <PackageProjectUrl>https://github.com/NimaAra/EasyLogger</PackageProjectUrl>
@@ -12,12 +12,13 @@
     <RepositoryUrl>https://github.com/NimaAra/EasyLogger</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.3' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <Version>0.0.1-log-002-100652b</Version>
   </PropertyGroup>
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.3;net40</TargetFrameworks>
-    <AssemblyTitle>Easy Logger</AssemblyTitle>
-    <AssemblyName>Easy.Logger</AssemblyName>
+    <AssemblyTitle>Legimi.Easy Logger</AssemblyTitle>
+    <AssemblyName>Legimi.Easy.Logger</AssemblyName>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 

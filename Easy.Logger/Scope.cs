@@ -1,9 +1,9 @@
-﻿namespace Easy.Logger
-{
-    using System;
-    using log4net;
-    using log4net.Util;
+﻿using System;
+using log4net;
+using log4net.Util;
 
+namespace Legimi.Easy.Logger
+{
     /// <summary>
     /// Provides scoped logging.
     /// </summary>

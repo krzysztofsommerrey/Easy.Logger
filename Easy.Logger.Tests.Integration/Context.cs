@@ -1,4 +1,6 @@
-﻿namespace Easy.Logger.Tests.Integration
+﻿using Legimi.Easy.Logger;
+
+namespace Easy.Logger.Tests.Integration
 {
     using System;
     using System.Collections.Concurrent;
@@ -9,8 +11,8 @@
     using System.Text.RegularExpressions;
     using System.Threading;
     using System.Xml.Linq;
-    using Easy.Logger.Interfaces;
-    using Easy.Logger.Tests.Integration.Models;
+    using Interfaces;
+    using Models;
     using NUnit.Framework;
     using Shouldly;
 

@@ -12,7 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Easy.Logger.Extensions\Easy.Logger.Extensions.csproj" />
-    <ProjectReference Include="..\Easy.Logger\Easy.Logger.csproj" />
+    <ProjectReference Include="..\Easy.Logger\Legimi.Easy.Logger.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />

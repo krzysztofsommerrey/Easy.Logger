@@ -1,15 +1,15 @@
-﻿namespace Easy.Logger
-{
-    using System;
-    using System.Diagnostics;
-    using System.Globalization;
-    using Easy.Logger.Interfaces;
-    using log4net;
-    using log4net.Core;
-    using log4net.Util;
+﻿using Easy.Logger.Interfaces;
+using System;
+using System.Diagnostics;
+using System.Globalization;
+using log4net;
+using log4net.Core;
+using log4net.Util;
 
+namespace Legimi.Easy.Logger
+{
     /// <summary>
-    /// A <c>log4net</c> implementation of the <see cref="IEasyLogger{T}"/> interface.
+    /// A <c>log4net</c> implementation of the <see cref="IEasyLogger"/> interface.
     /// </summary>
     public sealed class Log4NetLogger<T> : Log4NetLogger, IEasyLogger<T>
     {

@@ -1,4 +1,6 @@
-﻿namespace Easy.Logger.Benchmarker.Core
+﻿using Legimi.Easy.Logger;
+
+namespace Easy.Logger.Benchmarker.Core
 {
     using System;
     using System.Diagnostics;

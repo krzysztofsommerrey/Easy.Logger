@@ -1,13 +1,16 @@
-﻿namespace Easy.Logger
+﻿using Easy.Logger.Interfaces;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Reflection;
+using log4net;
+using log4net.Config;
+using log4net.Repository;
+
+
+namespace Legimi.Easy.Logger
 {
-    using System;
-    using System.Diagnostics;
-    using System.IO;
-    using System.Reflection;
-    using Easy.Logger.Interfaces;
-    using log4net;
-    using log4net.Config;
-    using log4net.Repository;
+    
 
     /// <summary>
     /// An implementation of the <see cref="ILogService"/> based on <c>log4net</c>.

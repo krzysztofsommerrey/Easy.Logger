@@ -1,11 +1,11 @@
-﻿namespace Easy.Logger
-{
-    using System;
-    using System.Threading;
-    using log4net.Appender;
-    using log4net.Core;
-    using log4net.Util;
+﻿using System;
+using System.Threading;
+using log4net.Appender;
+using log4net.Core;
+using log4net.Util;
 
+namespace Legimi.Easy.Logger
+{
     /// <summary>
     /// An appender which batches the log events and asynchronously forwards them to any configured appenders.
     /// <seealso href="www.nimaara.com/2016/01/01/high-performance-logging-log4net/"/>
