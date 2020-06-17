@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.Logger.Benchmarker.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.Logger.Tests.Unit", "Easy.Logger.Tests.Unit\Easy.Logger.Tests.Unit.csproj", "{3F18ECA6-B525-469C-BCE6-A75E2ED9F5D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy.Logger.Interfaces", "Easy.Logger.Interfaces\Easy.Logger.Interfaces.csproj", "{80248AFD-52ED-47A0-B077-97AE8DC067CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Legimi.Easy.Logger.Interfaces", "Easy.Logger.Interfaces\Legimi.Easy.Logger.Interfaces.csproj", "{80248AFD-52ED-47A0-B077-97AE8DC067CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BF77A4B4-7A20-4D72-8E5D-4CA911B5773C}"
 EndProject

@@ -1,4 +1,4 @@
-﻿using Easy.Logger.Interfaces;
+﻿using Legimi.Easy.Logger.Interfaces;
 using System;
 using System.Diagnostics;
 using System.Globalization;
@@ -49,13 +49,18 @@ namespace Legimi.Easy.Logger
         /// <param name="name">The name of the scope</param>
         public IDisposable GetScopedLogger(string name) => new Scope(name);
 
-    #region Levels Enabled
+        /// <summary>
+        /// Gets the inner logger.
+        /// </summary>
+        public ILogger Logger => _logger.Logger;
+
+        #region Levels Enabled
 
         /// <summary>
         /// Gets the flag indicating whether the logger is enabled for 
         /// <c>Trace</c> messages.
         /// </summary>
-        public bool IsTraceEnabled => IsEnabledFor(Level.Trace);
+        public bool IsTraceEnabled => _logger.Logger.IsEnabledFor(Level.Trace);
 
         /// <summary>
         /// Gets the flag indicating whether the logger is enabled for 
@@ -87,7 +92,7 @@ namespace Legimi.Easy.Logger
         /// </summary>
         public bool IsFatalEnabled => _logger.IsFatalEnabled;
 
-    #endregion
+        #endregion
 
     #region Trace
         
@@ -913,19 +918,17 @@ namespace Legimi.Easy.Logger
                 new SystemStringFormat(provider, format, args),
                 null);
 
-    #endregion
+        #endregion
 
         private static string PrefixScopesIfAny(string message)
         {
             var scopeMsg = Scope.ScopeMessage;
             return scopeMsg is null ? message : string.Concat(scopeMsg, " ", message);
         }
-
-        private bool IsEnabledFor(Level level) => _logger.Logger.IsEnabledFor(level);
-
+        
         private void LogImpl(Level level, object message, Exception exception)
         {
-            if (!IsEnabledFor(level)) { return; }
+            if (!_logger.Logger.IsEnabledFor(level)) { return; }
 
             _logger.Logger.Log(
                 ThisDeclaringType, 

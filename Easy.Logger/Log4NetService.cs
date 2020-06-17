@@ -1,4 +1,4 @@
-﻿using Easy.Logger.Interfaces;
+﻿using Legimi.Easy.Logger.Interfaces;
 using System;
 using System.Diagnostics;
 using System.IO;

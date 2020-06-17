@@ -1,6 +1,7 @@
-﻿namespace Easy.Logger.Interfaces
+﻿namespace Legimi.Easy.Logger.Interfaces
 {
     using System;
+    using log4net.Core;
 
     /// <summary>
     /// The <see cref="IEasyLogger"/> interface specifying 
@@ -20,7 +21,22 @@
         /// <param name="name">The name of the scope</param>
         IDisposable GetScopedLogger(string name);
 
-    #region Levels Enabled
+        /// <summary>Get the implementation behind this wrapper object.</summary>
+        /// <value>
+        /// The <see cref="T:log4net.Core.ILogger" /> object that in implementing this object.
+        /// </value>
+        /// <remarks>
+        /// <para>
+        /// The <see cref="T:log4net.Core.ILogger" /> object that in implementing this
+        /// object. The <c>Logger</c> object may not
+        /// be the same object as this object because of logger decorators.
+        /// This gets the actual underlying objects that is used to process
+        /// the log events.
+        /// </para>
+        /// </remarks>
+        ILogger Logger { get; }
+
+        #region Levels Enabled
         /// <summary>
         /// Gets the flag indicating whether the logger is enabled for 
         /// <c>Trace</c> messages.

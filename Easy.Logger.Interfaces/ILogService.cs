@@ -1,4 +1,4 @@
-﻿namespace Easy.Logger.Interfaces
+﻿namespace Legimi.Easy.Logger.Interfaces
 {
     using System;
     using System.IO;

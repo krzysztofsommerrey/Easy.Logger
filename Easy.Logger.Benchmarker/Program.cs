@@ -1,13 +1,12 @@
-﻿using Legimi.Easy.Logger;
-
-namespace Easy.Logger.Benchmarker
+﻿namespace Easy.Logger.Benchmarker
 {
     using System;
     using System.Diagnostics;
     using System.IO;
     using System.Threading;
     using System.Threading.Tasks;
-    using Easy.Logger.Interfaces;
+    using Legimi.Easy.Logger.Interfaces;
+    using Legimi.Easy.Logger;
 
     internal class Program
     {
